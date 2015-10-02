@@ -1,0 +1,34 @@
+/* custom style */
+red {
+	color:#EA4335;
+}
+blue {
+	color: #4285F4;
+}
+yellow {
+	color: #FBBC05;
+}
+green {
+	color: #34A853;
+}
+black {
+	color: black;
+}
+white {
+	color: white;
+}
+.blk2 {
+	width: 500px;
+	display: inline-block;
+	vertical-align: top !important;
+}
+.blk3 {
+	width: 330px;
+	display: inline-block;
+	vertical-align: top !important;
+}
+.blk4 {
+	width: 250px;
+	display: inline-block;
+	vertical-align: top !important;
+}
