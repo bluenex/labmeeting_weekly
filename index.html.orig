@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Lab Meeting Weekly</title>
+
+		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon3.png">
+
+		<meta name="description" content="A presentation slide for weekly lab meeting.">
+		<meta name="author" content="Tulakan Ruangrong">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+<<<<<<< HEAD
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+||||||| merged common ancestors
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+=======
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+		<link rel="stylesheet" href="css/mycustom.css">
+>>>>>>> wk1
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<!-- 
+			color memo: 
+			__reveal demo__
+			#4D7E65 - green
+			#B5533C - orange
+			__google logo__
+			#4285F4 - blue
+			#EA4335 - red
+			#FBBC05 - yellow
+			#34A853 - green
+			 -->
+			<div class="slides">
+				<section id="cover" data-background="#4285F4">
+					<h1>Lab Meeting</h1>
+					<h3>Weekly Journal Discussion</h3>
+					<!-- <p>
+						<small>The literature reviews for Gyro-Roller project.</small>
+					</p> -->
+				</section>
+
+				<section id="paper-title" data-background="#EA4335">
+					<h3>Effect of Virtual Reality on <br/>Cognition in Stroke Patients</h3>
+					<p>Week 1</p>
+				</section>
+
+				<section id="introduction" data-background="#FBBC05">
+					<section>
+						<h2>Introduction</h2>
+					</section>
+
+					<section>
+						<h3>The affected area of cognitive function</h3>
+						<ul>
+							<li>Can be only one area of cognitive function</li>
+							<li>But in most cases, it affects all area including:</li>
+							<!-- <small><ul>
+								<li>Attention</li>
+								<li>Concentration</li>
+								<li>Memory</li>
+								<li>Spatial processing skills</li>
+								<li>Language</li>
+								<li>Problem-solving skills</li>
+								<li>Planning skills</li>
+							</ul></small> -->
+						</ul>
+						<p>Attention, Concentration, Memory, Spatial processing skills,
+							<br/>Language, Problem-solving skills, Planning skills</p>
+					</section>
+
+					<section>
+						<h3>Cognitive impairment after <br/>stroke can affects:</h3>
+							<ul>
+								<li>Independent function</li>
+								<li>Activity participation</li>
+								<li>Decreasing in morale and motivation <br/>to participate in rehabilitation</li>
+							</ul>
+					</section>
+
+					<section>
+						<p>Most studies use virtual reality in cognitive <br/>
+							function to <strong>assess</strong> unilateral neglect or overall <br/>
+							cognitive impairment</p>
+							<br/>
+						<p>Whereas only few studies <strong>proved</strong> effectiveness <br/>
+							of virtual reality on cognitive impairment
+						</p>
+					</section>
+				</section>
+
+				<section id="material" data-background="#34A853">
+					<section>
+						<h2>Materials and Methods</h2>
+					</section>
+
+					<section>
+						<h3>Study subjects</h3>
+						<ul>
+							<li>First stroke</li>
+							<li>28 patients</li>
+							<li>Already pass acute phase treatment</li>
+							<li>K-MMSE score range from 10-24</li>
+							<li>Virtual reality & Control groups</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Research methods</h3>
+						<p><strong>VR group</strong></p>
+						<ul>
+							<li>VR training 30 min, 3 times/week</li>
+							<li>Computer based training 30 min, 2 times/week</li>
+							<li>For 4 weeks</li>
+						</ul>
+
+						<p><strong>Control group</strong></p>
+						<ul>
+							<li>Computer based training 30 min, 5 times/week</li>
+							<li>For 4 weeks</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h3>Virtual reality training</h3>
+						<ul>
+							<li>Use commercial product called <strong><yellow>IREX system®</yellow></strong></li>
+							<li>5 out of 20 games were chosen</li>
+							<blockquote><ul>
+								<li>Bird and Balls</li>
+								<li>Coconuts</li>
+								<li>Conveyer</li>
+								<li>Juggler</li>
+								<li>Soccer</li>
+							</ul></blockquote>
+							<li>For each times, 4 games will be used</li>
+							<li>6 minutes training with 2 minutes <br>break for each game </li>
+						</ul>
+					</section>
+					
+					<section>
+						<br/>
+						<h4>Virtual reality experimental set up of IREX System®</h4>
+						<img data-src="img/wk1/system.png" width="26.3%">
+						<img data-src="img/wk1/game1.png" width="25.7%">
+						<img data-src="img/wk1/game2.png" width="25%">
+						<img data-src="img/wk1/game3.png" width="25.7%">
+						<img data-src="img/wk1/game4.png" width="25%">
+						<img data-src="img/wk1/game5.png" width="25%">
+					</section>
+					
+					<section>
+						<h3>Computer-assisted cognitive training</h3>
+						<ul>
+							<li>Use commercial product called <yellow><strong>ComCog®</strong></yellow></li>
+							<li>Designed to promote <strong>attention</strong> and <strong>memory</strong> <br>for patients with cognitive impairment</li>
+							<li>Both attention and memory program consist of three <br>courses (beginner, intermediate and advanced)</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h3>Training program in details</h3>
+						<div class="blk2">
+							<p><strong>Attention</strong></p>
+							<ul style="font-size:70%">
+								<li>basic <yellow>visual perception</yellow> training</li>
+								<li><yellow>auditory perception</yellow> training</li>
+								<li><yellow>attention</yellow> training</li>
+								<li><yellow>attention discrimination</yellow> training</li>
+								<li><yellow>continuous attention</yellow> training</li>
+								<li><yellow>attention integration</yellow> training</li>
+								<li><yellow>emotion</yellow> training</li>
+							</ul>
+						</div>
+						<div class="blk2">
+							<p><strong>Memory</strong></p>
+							<ul style="font-size:70%">
+								<li>simple <yellow>recognition memory</yellow> training</li>
+								<li>simple <yellow>spatial memory</yellow> training</li>
+								<li>sequential <yellow>recall memory</yellow> training</li>
+								<li>sequential <yellow>verbal recall memory</yellow> training</li>
+								<li>associated <yellow>recall memory</yellow> training</li>
+								<li><yellow>verbal categorization memory</yellow> training</li>
+								<li><yellow>integrated memory</yellow> training</li>
+							</ul>
+						</div>
+					</section>	
+					
+					<section data-background="black">
+						<h3>Evaluation methods</h3>
+						<p>Before & After treament</p>
+						<ul>
+							<hr>
+							<li>Computerized Neuropsychological <br/>Test (<strong>CNT</strong>, MaxMedica)</li>
+							<li>Tower of London test (<strong>TOL</strong>)</li>
+							<li>Korean-Modified Barthel Index (<strong>K-MBI</strong>)</li>
+							<li>Motricity Index (<strong>MI</strong>)</li>
+						</ul>
+					</section>
+					
+					<section data-background="black">
+						<h4>CNT in details</h4>
+						<ul style="font-size:75%">
+							<li>Visual & Auditory continuous performance tests (CPT)</li>
+							<li>Word-Color test</li>
+							<li>Forward & Backward digit span tests (DST)</li>
+							<li>Verbal learning test for verbal memory evaluation tests</li>
+							<li>Spatial memory test</li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</section>
+
+				</section>
+				
+				<section>
+					<section>
+						<h3>What to do!</h3>
+						<p><strong>Clear Cut Definition</strong></p>
+						<ul>
+							<li>VR vs Other computer based programs</li>
+							<li>Each cognitive function</li>
+							<li>Which game help in which cognitive area</li>
+						</ul>
+					</section>
+				</section>
+				
+				
+				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				width: 1366,
+				height: 768,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+			Reveal.configure({
+				backgroundTransition: 'zoom',
+			});
+
+		</script>
+
+	</body>
+</html>
