@@ -1,47 +1,48 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
 
-		<title>Lab Meeting Weekly</title>
+<head>
+	<meta charset="utf-8">
 
-		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon3.png">
+	<title>Lab Meeting Weekly</title>
 
-		<meta name="description" content="A presentation slide for weekly lab meeting.">
-		<meta name="author" content="Tulakan Ruangrong">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon3.png">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="description" content="A presentation slide for weekly lab meeting.">
+	<meta name="author" content="Tulakan Ruangrong">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css" id="theme">
-		<link rel="stylesheet" href="css/mycustom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">
+	<link rel="stylesheet" href="css/mycustom.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-		
-		<!--[if lt IE 9]>
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
-		<div class="reveal">
+<body>
+	<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<!-- 
-			color memo: 
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<!--
+			color memo:
 			__reveal demo__
 			#4D7E65 - green
 			#B5533C - orange
@@ -51,227 +52,292 @@
 			#FBBC05 - yellow
 			#34A853 - green
 			 -->
-			<div class="slides">
-				<section id="cover" data-background="#4285F4">
-					<h1>Lab Meeting</h1>
-					<h3>Weekly Journal Discussion</h3>
-					<!-- <p>
+		<div class="slides">
+			<section id="cover" data-background="#4285F4">
+				<h1>Lab Meeting</h1>
+				<h3>Weekly Journal Discussion</h3>
+				<!-- <p>
 						<small>The literature reviews for Gyro-Roller project.</small>
 					</p> -->
+			</section>
+
+			<section id="paper-title" data-background="#EA4335">
+				<h3>Does the Inclusion of Virtual Reality Games within Conventional Rehabilitation Enhance Balance Retraining after a Recent Episode of Stroke?
+					<small>(2013)</small>
+				</h3>
+				<p>Week 4</p>
+			</section>
+
+			<section id="introduction" data-background="#FBBC05">
+				<section>
+					<h2>Introduction</h2>
 				</section>
 
-				<section id="paper-title" data-background="#EA4335">
-					<h3>Towards Customizable Games for Stroke Rehabilitation</h3>
-					<p>Week 3</p>
+				<section>
+					<h3>Stroke</h3>
+					<ul>
+						<li>Global death from stroke had reduced in most contries</li>
+						<li>But the demand for poststroke rehabilitation services is increased</li>
+					</ul>
 				</section>
 
-				<section id="introduction" data-background="#FBBC05">
-					<section>
-						<h2>Introduction</h2>
-					</section>
-
-					<section>
-                        <h3>Stroke</h3>
-                        <ul>
-                            <li>Most common cause of long term disability</li>
-                            <li>Stroke survivors could have problems with their <br />
-                                <b>cognitive, visual</b> and <b>motor systems</b></li>
-                            <li>High-intensity, repetitive motions while keeping patients <br />
-                                informed about their progress are recommended</li>
-                            <li>Only around <b>31%</b> of patients perform the exercises <br />
-                                recommended by their therapists</li>
-                        </ul>
-					</section>
-					
-					<section>
-                        <h3>Rehabilitation Games</h3>
-                        <ul>
-                            <li>By providing performance feedback and decreasing monotony <br />
-                                of repeated motions, games may increase both <b>quality and <br />
-                                quantity</b> of patient therapy</li>
-                            <li>The goal is to develop game system in which therapists can <br />
-                            customize for the individual</li>
-                            <li>To have the greatest impact, these games must:</li>
-                            <ol style="font-size:85%">
-                                <li>Ensure that patients are correctly performing useful therapy motions</li>
-                                <li>Provide a motivating context for therapy</li>
-                                
-                            </ol>
-                        </ul>
-					</section>
+				<section>
+					<h3>Rehabilitation using VR</h3>
+					<ul>
+						<li>Limited evidence of Virtual Reality (<b>VR</b>) vs Conventional
+							<br> rehabilitation (<b>CR</b>) in term of arm funcion and ADL</li>
+						<li>Conflicting evidence that performance gains in VR are
+							<br/> seldom transferred to real-world</li>
+					</ul>
 				</section>
 
-				<section id="methods" data-background="#34A853">
-					<section>
-						<h2>Methods</h2>
-					</section>
-					
-					<section>
-                        <h3>The interesting questions of authors</h3>
-                        <ol>
-                            <li>What supports are necessary to adapt games to make them playable by individual users with different kinds of brain injuries and different levels of recovery?</li>
-                            <li>How do we ensure that games are valuable from a therapeutic context?</li>
-                        </ol>
-					</section>
-					
-					<section>
-						<h3>To answer the questions</h3>
-                        <ul>
-                            <li>Iterative approach: developing > testing by users</li>
-                            <li>Four stroke patients participated in their tests</li>
-                            <li>Brainstorming with therapists</li>
-                            <li>Discuss strengths and weaknesses after each game</li>
-                        </ul>
-					</section>
-
-                    <section>
-                        <h3>Input devices</h3>
-                        <ul>
-                            <li>Wii Remotes with WiiRemoteJ library</li>
-                            <li>Webcam</li><br />
-                        </ul>
-                        <h3>Software</h3>
-                        <ul>
-                            <li>Java with LookingGlass code base</li>
-                        </ul>
-                    </section>
-					
-					<section>
-						<h3>Wii Remotes Attachment</h3>
-						<img data-src="/img/wk3/5.png">
-					</section>
-					
-					<section>
-						<h3>Participants</h3>
-						<ul>
-							<li>Of all four patients, there is one patient who is back to work</li>
-							<li>The others rely on caregivers, only one of them can use affected <br>side to do activity daily living</li>
-						</ul>
-						<br/>
-						<br/>
-						<h3>Game development</h3>
-						<ul>
-							<li>Social context - Multi-player</li>
-							<li>Motion type - 1D or 2D</li>
-							<li>Cognitive challenge</li>
-						</ul>
-					</section>
+				<section>
+					<h3>Amount of therapy time and functional outcomes</h3>
+					<ul>
+						<li>More time spent on gait training - better outcomes</li>
+						<li>However, patients after stroke only receive around
+							<br/> 44 minutes of physical therapy a day</li>
+					</ul>
 				</section>
 
-				<section id="results" data-background="#4285F4">
-					<section>
-						<h2>Games</h2>
-					</section>
+				<section>
+					<h3>Objective of the paper</h3>
+					<blockquote style="font-size:75%">To evaluate if
+						<red>including VR balance related games during inpatient rehabilitation sessions
+							<span style="border-bottom:3px solid #EA4335;">without increasing therapy time</span>
+						</red> would contribute to balance recovery among inpatients after a recent episode of stroke.</blockquote>
+				</section>
 
-					<section>
-						<h3>Games list</h3>
-						<div class="blk2">
-							<ul>
-								<li>Frog Simon</li>
-								<li>Dirt Race</li>
-								<li>Base Catch</li>
-								<li>Catch the Kitty</li>
-								<li>Under the Sea</li>
-							</ul>
-						</div>
-						<div class="blk2">
-							<ul>
-								<li>Pong</li>
-								<li>Frogger</li>
-								<li>Helicopter</li>
-								<li>Garden</li>
-							</ul>
-						</div>
-					</section>
+				<section>
+					<h3><a style="color:#222" href="http://www.ebbp.org/course_outlines/randomized_controlled_trials/">Randomized controlled trials</a></h3>
+					<ul>
+						<li>Participants are assigned to treatment conditions at random</li>
+						<li>All participants in all study groups are treated the same except
+							<br />for the factor that is unique to their group</li>
+					</ul>
+				</section>
 
-					<section>
-						<h3>Games example</h3>
-						<img data-src="/img/wk3/1.png" width="34%">
-						<img data-src="/img/wk3/2.png" width="34%">
-						<img data-src="/img/wk3/3.png" width="34%">
-						<img data-src="/img/wk3/4.png" width="34%">
-					</section>
+				<section>
+					<h3><a style="color:#222" href="https://en.wikipedia.org/wiki/Blind_experiment#Double-blind_trials">Double-blind trials</a></h3>
+					<ul>
+						<li>An experiment which attempts to eliminate subjective</li>
+						<li>Neither the participants nor the researchers know which
+							<br />participants belong to the control group, nor the test group</li>
+					</ul>
 				</section>
-				
-				<section id="discussion" data-background="#EA4335">
-					<section>
-						<h2>Lessons Learned</h2>
-					</section>
-					
-					<section>
-						<h5>Making games playable for a broad range of stroke patients</h5>
-						<ul>
-							<li>Assume no use of hands</li>
-							<li>Simple games should support multiple methods of user input</li>
-							<li>Calibrate through example motions</li>
-							<li>Direct and natural mappings are necessary</li>
-						</ul>
-					</section>
+			</section>
 
-					<section>
-						<h5>Ensuring that games are valuable from a therapeutic perspective</h5>
-						<ul>
-							<li>Ensure that users’ motions cover their full range</li>
-							<li>Detect compensatory motion</li>
-						</ul>
-						<br>
-						<br>
-						<h5>Making games fun and challenging</h5>
-						<ul>
-							<li>Audio and visuals are important</li>
-							<li>Automatic difficulty adjustments provide adequate challenge</li>
-							<li>Non-Player Characters (NPCs) and Storylines are intriguing</li>
-						</ul>
-					</section>
+			<section id="methods" data-background="#34A853">
+				<section>
+					<h2>Methods</h2>
 				</section>
-				
-				<section id="conclusion" data-background="#FBBC05">
-					<section>
-						<h2>Future Work</h2>
-					</section>
+
+				<section>
+					<h3>Subjects</h3>
+					<ul>
+						<li>A total of 19 inpatients
+							<em>(age: M=61.6; SD=7.8)</em>
+						</li>
+						<li>First onset of stroke
+							<em>(days after stroke; mean = 14.85 ± 6.8)</em>
+						</li>
+						<li>Assessed by Modified Rankin Scale (mRS) as moderate
+							<br/> or moderate severe disability (3 or 4 out of 6)</li>
+						<li>Mini-Mental State Examination (MMSE) score is greather
+							<br/> than 23</li>
+					</ul>
 				</section>
-				
-				<section id="end" data-background="#000">
-					<h1>END</h1>
+
+				<section>
+					<h3>Subjects table</h3>
+					<img data-src="img/wk4/1.png" width="40%">
 				</section>
-				
-			</div>
+
+				<section>
+					<h3>Experimental Protocol</h3>
+					<ul>
+						<li>Control group receives 60 minutes of conventional rehabilitation (CR)</li>
+						<li>Experimental group receives 40 minute of CR and 20 minutes of VR</li>
+						<li>Experimental group was introduced to either Wii-Fit or Kinect</li>
+					</ul>
+					<br>
+					<br>
+					<img src="img/wk4/2.png" width="35.5%"> &nbsp;&nbsp;
+					<img src="img/wk4/3.png" width="34%">
+				</section>
+
+				<section id="ocms">
+					<a href="#/btwg">
+						<h3>Outcome Measures</h3>
+					</a>
+					<ul>
+						<li>Evaluate by researcher who is not involved in interventions</li>
+						<li>Functional Reach Test (FRT), Timed Up and Go (TUG),
+							<br> Berg Balance Scale (BBS), Centre of Pressure (CoP),
+							<br> and Modified Barthel Index (MBI) were assessed before
+							<br> and after the intervention period.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Data Analysis</h3>
+					<ul>
+						<li>Data were not normally distributed</li>
+						<li>
+							<em>Mann-Whitney U tests</em> were used for between-group differences
+							<br> at baseline and after intervention</li>
+						<li>
+							<em>Wilcoxon sign ranked test</em> was used to determine within-subject
+							<br> changes between the baseline and post-intervention values in
+							<br> both groups</li>
+					</ul>
+				</section>
+			</section>
+
+			<section id="results" data-background="#4285F4">
+				<section>
+					<h2>Results</h2>
+				</section>
+
+				<section data-notes="This implied both groups baselines were similar, and thus comparison after intervention would reveal intervention effect." id="btwg">
+					<h3>Between Groups</h3>
+					<ul>
+						<li><b><yellow>No</yellow></b> significant differences in baseline of
+							<a href="#/ocms">
+								<white>all measures</white>
+							</a> in both groups</li>
+						<li>After 15 sessions, <a href="http://www.ndorms.ox.ac.uk/prove/documents/assessors/outcomeMeasures/Functional_Reach_Test_Protocol.pdf" target="_blank"><b><yellow>FRT</yellow></b></a> scores was spot significant difference</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Within Experiment Group</h3>
+					<ul>
+						<li>Significantly improved in
+							<a href="http://www.rehabmeasures.org/PDF%20Library/Timed%20Up%20and%20Go%20Test%20Instructions.pdf" target="_blank">
+								<white>TUG</white>
+							</a>, FRT and
+							<a href="http://www.health.wa.gov.au/circularsnew/attachments/143.pdf" target="_blank">
+								<white>MBI</white>
+							</a> scores</li>
+					</ul>
+					<br>
+					<br>
+					<h3>Within Control Group</h3>
+					<ul>
+						<li>Significantly improved in TUG and MBI scores</li>
+					</ul>
+				</section>
+			</section>
+
+			<section id="discussion" data-background="#EA4335">
+				<section>
+					<h2>Discussion</h2>
+				</section>
+
+				<section>
+					<ul>
+						<li>Introducing VR within the standard treatment
+							<br>time of CR was equally effective as CR alone</li>
+						<li>What VR group got more is FRT which is strongly
+							<br>correlated with
+							<a href="http://www.aahf.info/pdf/Berg_Balance_Scale.pdf" target="_blank">
+								<white>BBS</white>
+							</a>
+						</li>
+						<li>Their finding support the hypothesis that VR balance
+							<br>related game was more effective than CR as it improves
+							<br>load-unloading sway strategy at the hip</li>
+						<li>CR lacks of interest by patient</li>
+						<li>Physical therapist should work with professional media
+							<br>creator in order to create game</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Limitations</h3>
+					<ul>
+						<li>Too small sample size (expected > 50 for each group in future study)</li>
+						<li>The measurements could possibly be cosidered as false positive</li>
+					</ul>
+				</section>
+			</section>
+
+			<section id="conclusion" data-background="#FBBC05">
+				<section>
+					<h2>Conclusion</h2>
+				</section>
+
+				<section>
+					<ul>
+						<li>Well-designed game based on therapeutic principles will empower patients to be involved in their rehabilitation</li>
+					</ul>
+				</section>
+			</section>
+
+			<section id="end" data-background="#000">
+				<h1>END</h1>
+			</section>
+
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
+	<script>
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+			width: 1366,
+			height: 768,
 
-				width: 1366,
-				height: 768,
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+			// Optional reveal.js plugins
+			dependencies: [{
+				src: 'lib/js/classList.js',
+				condition: function() {
+					return !document.body.classList;
+				}
+			}, {
+				src: 'plugin/markdown/marked.js',
+				condition: function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src: 'plugin/markdown/markdown.js',
+				condition: function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true,
+				condition: function() {
+					return !!document.querySelector('pre code');
+				},
+				callback: function() {
+					hljs.initHighlightingOnLoad();
+				}
+			}, {
+				src: 'plugin/zoom-js/zoom.js',
+				async: true
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}]
+		});
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+		Reveal.configure({
+			backgroundTransition: 'zoom',
+		});
+	</script>
 
-			Reveal.configure({
-				backgroundTransition: 'zoom',
-			});
+</body>
 
-		</script>
-
-	</body>
 </html>
