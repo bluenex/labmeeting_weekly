@@ -32,3 +32,23 @@ white {
 	display: inline-block;
 	vertical-align: top !important;
 }
+.uw {
+	border-bottom: 3px solid #EEE !important;
+}
+.ub {
+	border-bottom: 3px solid #333 !important;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.tab {
+	text-indent: 50px;
+}
+.ulul {
+	margin-top: 8px !important; 
+	line-height: 33px !important;
+	font-size: x-large !important;
+}
