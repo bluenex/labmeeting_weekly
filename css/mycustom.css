@@ -1,3 +1,34 @@
+/* cover logo */
+.logoaim {
+	position: fixed;
+	top: -110%;
+	right: 15%;
+	/*bottom: -110%;*/
+}
+.logomu {
+	position: fixed;
+	top: -110%;
+	right: 5%;
+	/*bottom: -110%;*/
+}
+.aimbot {
+	position: fixed;
+	bottom: -115%;
+	left: 5%;
+	transform: scaleX(-1);
+	transform: rotate(-15deg);
+}
+.headertext p {
+	position: fixed;
+	top: -95%;
+	right: 25%;
+	text-align: right;
+	font-size: x-large;
+	font-weight: 700;
+	border-bottom: 3px solid #eee;
+	width: 25%;
+}
+
 /* custom style */
 red {
 	color:#EA4335;
@@ -51,4 +82,9 @@ white {
 	margin-top: 8px !important; 
 	line-height: 33px !important;
 	font-size: x-large !important;
+}
+.no-img-effect {
+	border: none !important;
+	background: none !important;
+	box-shadow: none !important;
 }
