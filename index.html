@@ -62,20 +62,24 @@
 						Mahidol University
 					</p>
 				</div>
+				
 				<img data-src="img/logo/logoaim.png" class="no-img-effect logoaim"  width="8%"/>
 				<img data-src="img/logo/logomu.png" class="no-img-effect logomu" width="8%">
 				<img data-src="img/logo/aimbot.png" class="no-img-effect aimbot" width="15%">
 				
+				<!-- workaround to fix different viewports problem on Chrome and Safari -->
+				<br><br><br><br><br>
 				<h1>Lab Meeting</h1>
 				<h3>Weekly Journal Discussion</h3>
+				<br><br><br><br><br>
 				<!-- <p>
 						<small>The literature reviews for Gyro-Roller project.</small>
 					</p> -->
 			</section>
 
 			<section id="paper-title" data-background="#EA4335">
-				<h3>AGATHE: A tool for personalized rehabilitation of cognitive functions based on simulated activities of daily living</h3>
-				<p>Week 7</p>
+				<h3>The Design of an Interactive Stroke Rehabilitation Gaming System <small>(2011)</small></h3>
+				<p>Week 8</p>
 			</section>
 
 			<section id="introduction" data-background="#FBBC05">
@@ -84,105 +88,190 @@
 				</section>
 
 				<section>
-					<h3>Cognitive Impairments</h3>
-					<h5>Can be from</h5>
-					<ul>
-						<li>Traumatic Brain Injury (TBI) - Around 25,000 people in France</li>
-						<li>Stroke - Around 130,000 people in France</li>
-						<li>Degenerative</li>
+					<ul class="blk-75">
+						<li>In the past two years, stroke-related medical costs have <red>increased 20%</red> (in US) while <red>the numbers of clinical treatment sessions have declined.</red></li>
+						<li>There is a need to create a home-based stroke rehabilitation system that is affordable but remains effective and interesting.</li>
 					</ul>
 				</section>
 
 				<section>
-					<h3>Virtual Reality</h3>
-					<ul>
-						<li>The use of VR for cognitive intervention is still at the stage of exploratory research</li>
-					</ul>
-					<br><br>
-					<h3>Objectives</h3>
-					<ul>
-						<li>To provide therapists with an innovative means of dealing with cognitive rehabilitation.</li>
-						<li>To offer patients customized rehabilitation sessions, on the basis of simulated activities of daily living</li>
-						<li>To fit into accessibility prospects of the tool (for everyone, everywhere and anywhere) and reduction of the cost of rehabilitation</li>
-						<li>To open a new application field to the technology of the industrial partners.</li>
+					<h3>Approaches to Stroke Rehabilitation</h3>
+					<ul class="blk-75">
+						<li>Traditional customary care involves <red>time intensive treatment from an occupational therapist.</red></li>
+						<ul class="ulul">
+							<li>performing repetitive movements <b>></b> induce motor learning <b>></b> improve the movement behaviour of the stroke survivor</li>							
+						</ul>
+						<li>Several alternative rehabilitation methods have been proposed:</li>
+						<ul class="ulul">
+							<li>Constrained Induced Movement Therapy (CIMT)</li>
+							<ul class="ulul">
+								<li style="font-size:70%"><red>CIMT is only useful for a sub-group of the stroke population because of the mental and psychological requirements in having self-discipline to stick with the program</red></li>
+							</ul>
+							<li>Robot Assisted Rehabilitation</li>
+							<ul class="ulul">
+								<li style="font-size:70%"><red>not cost effective for small business nor is it feasible for the home environment</red></li>
+							</ul>
+						</ul>
+						<li>Studies have shown that the Wii can have a beneficial health impact on stroke survivors.</li>
+						<ul class="ulul">
+							<li><red>require precise dexterous movements</red></li>
+							<li><red>completing game activities under extreme time pressure</red></li>
+						</ul>
 					</ul>
 				</section>
 				
 				<section>
-					<h3>Consortium</h3>
+					<h3>Benefits of gaming</h3>
 					<ul>
-						<li>Conceived and coordinated by Arts et Métiers ParisTech</li>
-						<li>The expertise of this project leader is in virtual reality therapeutic applications</li>
-						<li>Six partners with complementary multidisciplinary skills worked together to design and produce the AGATHE tool</li>
-						<li>The Research Team included partners from virtual reality specialists, rehabilitation clinicians, occupational therapists and neuropsychologists</li>
+						<li>Playing video games produces gains in certain physical and cognitive abilities.</li>
+						<li>Previous studies using video games as the <red>primary intervention</red> have found improvements in:</li>
+							<ul class="ulul">
+								<li><red>reaction time, short-term and long-term memory, attention,</red> and <red>spatial ability</red></li>
+							</ul>
+						<li>Different approaches in game design for rehabilitation:</li>
+							<ul class="ulul">
+								<li>focused on memory and prose recall</li>
+								<li>encode specific rehabilitative movements as part of an interactive gaming experience</li>
+							</ul>		
 					</ul>
 				</section>
 				
 				<section>
-					<h3>Participants</h3>
-					<ul>
-						<li>AGATHE is built focusing on acquired brain injury, especially TBI and stroke</li>
-						<li>Patients and therapists were recruited in the rehabilitation service of the University Hospital of Bordeaux and that of Kerpape rehabilitation center.</li>
-					</ul>
+					<h3>Purpose</h3>
+					<blockquote>To create a compelling and fun game/experience that users would <red>enjoy playing</red> and that would <red>also improve the mobility and dexterity</red> of their stroke-affected arm</blockquote>
+					<p><b>Rehabilitation Medicine + Computer Science + Engineering</b></p>
 				</section>
 			</section>
 
 			<section id="methods" data-background="#34A853">
 				<section>
-					<h2>Methods</h2>
+					<h2>System Hardware Architecture</h2>
 				</section>
 
 				<section>
-					<ul>
-						<li>AGATHE tool is a software package dedicated to two types of users (patients and therapists)</li>
-						<li>Based on two real-time softwares, <b>3DVIA Studio</b> from Dassault Systemes (creation of real-time virtual interactive environments) and <b>RTMaps</b> from Intempora (monitoring and real-time recording of patient activity through sensors)</li>
+					<h3>Input Devices</h3>
+					<ul class="blk-75">
+						<li>Stroke survivors are often not able to grasp and manipulate objects with their affected hand.</li>
+						<li>Therefore careful consideration for the input device is needed</li>
+						<li><b><yellow>Wii Remote with IR beacons</yellow></b> are used for 2D tracking</li>
+						<ul class="ulul">
+							<li>The raw 2D forearm tracking data is filtered using a <b><yellow>spring-damper function</yellow></b></li>
+							<li>After filtering the data were used for <b><yellow>simple inverse-kinematic (IK)</yellow></b> model of a human arm</li>
+						</ul>
 					</ul>
 				</section>
-
+				
 				<section>
-
+					<h3>System Display</h3>
+					<ul>
+						<li>The development and testing of the system was done on a personal computer.</li>
+					</ul>
+					<blockquote>A future design goal for the game display would be to <yellow><b>incorporate a low cost portable console that could connect directly to a television.</b></yellow></blockquote>
 				</section>
 			</section>
 
 			<section id="results" data-background="#4285F4">
 				<section>
-					<h2>Results</h2>
+					<h2>System Software Architecture</h2>
 				</section>
 
 				<section>
-
+					<ul class="blk-75">
+						<li>The system was developed in the <yellow><b>Unity 3D game engine.</b></yellow></li>
+						<li>Unity provides a rapid game prototyping and development environment and based on the Mono .NET software framework</li>
+					</ul>
 				</section>
 
 				<section>
+					<h3>System Operation and Content</h3>
+					<ul class="blk-75">
+						<li>A number of video game styles and genres were considered as prototypes, but the popular casual game Peggle was chosen.</li>
+						<li>Peggle itself is loosely based on older, mechanical games such as pinball.</li>
+						<li>The player’s score accumulates as pegs are hit and destroyed.</li>
+					</ul>
+					<blockquote>This greatly <b><yellow>simplified and sped up the graphical and game play design phases</yellow></b> and allowed more time and resources to be spent on augmenting and adapting the game to support stroke rehabilitation in the form of encouraging specific arm motions and exercises.
+</blockquote>
+				</section>
 
+				<section>
+					<br>
+					<h3>System Operation and Content</h3>
+					<ul class="blk-75">
+						<li>System based on Peggle’s game but is augmented to facilitate stroke-affected arm motions and exercises.</li>
+					</ul>
+					<br><br>
+					<iframe width="1100" height="440" src="https://en.wikipedia.org/wiki/Peggle"></iframe>
+				</section>
+								
+				<section data-notes="<ul><li>A variety of game behaviors can be triggered and controlled via large and small arm motions</li><li>The game control motions were chosen to mimic currently used stroke rehabilitation arm exercises</li></ul>">
+					<br><br>
+					<h3>System Operation and Content</h3>
+					<iframe width="640" height="480" src="https://www.youtube.com/embed/ZMo2Vegh8hA?start=40" frameborder="0" allowfullscreen></iframe>
+				</section>
+				
+				<section>
+					<br>
+					<h3>System Operation and Content</h3>
+					<img data-src="img/wk8/1.png" width="50%">
+					<p style="margin-top:0">The system prototype</p>
 				</section>
 			</section>
 
 			<section id="discussion" data-background="#EA4335">
 				<section>
-					<h2>Discussion</h2>
+					<h2>System Design and Usability</h2>
 				</section>
 
 				<section>
-
+					<blockquote>Knowledge gathering exercises were conducted with <yellow>two experts in the field of stroke rehabilitation</yellow> to ensure that the type of arm motions and exercises to be encoded into the game could lead to improvements in stroke survivors</blockquote>
+					<ul>
+						<li>In designing the game, a number of design criteria were developed which would facilitate stroke rehabilitation movements and exercises yet still be fun and compelling.</li>
+						<li>The game rules and mechanics should be simple and easily understood with the right balance of skill, chance and strategy.</li>
+					</ul>
 				</section>
 
 				<section>
-
+					<h3>Design Criteria</h3>
+					<ul>
+						<li>The game design required additional considerations due to the <yellow>uniqueness and limitations of the target users</yellow>  and to the functional requirements for successful physical rehabilitation.</li>
+						<li>In particular, to achieve true physical gains the players would need to spend significant time in the environment.</li>
+							<ul class="ulul">
+								<li>A game that is boring and tedious or an interface that is too physically strenuous would be unacceptable.</li>
+								<li>A game mechanic that is too easily mastered or that is too difficult can cause player frustration and nullify benefits of the system.</li>
+							</ul>
+						<li>Designing an environment that leads to a feeling of engagement, immersion and “oneness” with the system is <yellow>more of an art than a science.</yellow></li>
+							<ul class="ulul">
+								<li>However, extensive research exists in the area of computer interfaces including the new area of “serious” game design.</li>
+							</ul>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>Usability Testing</h3>
+					<ul>
+						<li>Due to limited budget and timeline a case study was conducted where a recent stroke survivor volunteered to evaluate the system.</li>
+							<ul class="ulul">
+								<li>The stroke survivor had persistent hemiparesis that lead to <yellow><b>impaired upper extremity function</b></yellow> but had <yellow><b>no severe weakness or sensory impairment of the upper extremity.</b></yellow></li>
+							</ul>
+						<li>Further, the individual stated that the prototype Peggle-based game was <b><yellow>fun and conducive to extended use</yellow></b>, a primary goal of this research.</li>
+					</ul>
 				</section>
 			</section>
 
 			<section id="conclusion" data-background="#FBBC05">
 				<section>
-					<h2>Conclusion</h2>
+					<h2>Conclusion and Future Work</h2>
 				</section>
 
 				<section>
-
-				</section>
-
-				<section>
-
+					<ul>
+						<li>This paper has described the <b>features, design, implementation and operation of the stroke rehabilitative gaming system and preliminary findings</b> from a case-study.</li>
+						<li>The system currently supports arm-tracking game control in 2D using only the Wii Remote’s IR camera tracking ability</li>
+							<ul class="ulul">
+								<li>Future development will include also utilizing the <b>Wii Remote’s three-axis accelerometers and the three-axis gyroscopes of the MotionPlus extension device.</b></li>
+								<li>Full, 6 DOF tracking of the player’s arm will <b>allow a much larger range of trackable arm motions</b> as well as <b>many more exercises and motions to be encouraged by stroke rehab game play.</b></li>
+							</ul>
+					</ul>
 				</section>
 			</section>
 
