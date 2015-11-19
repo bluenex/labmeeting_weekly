@@ -52,6 +52,7 @@
 			#FBBC05 - yellow
 			#34A853 - green
 			 -->
+
 		<div class="slides">
 			<section id="cover" data-background="#4285F4">
 				<div class="headertext">
@@ -61,20 +62,24 @@
 						Mahidol University
 					</p>
 				</div>
+				
 				<img data-src="img/logo/logoaim.png" class="no-img-effect logoaim"  width="8%"/>
 				<img data-src="img/logo/logomu.png" class="no-img-effect logomu" width="8%">
 				<img data-src="img/logo/aimbot.png" class="no-img-effect aimbot" width="15%">
 				
+				<!-- workaround to fix different viewports problem on Chrome and Safari -->
+				<br><br><br><br><br>
 				<h1>Lab Meeting</h1>
 				<h3>Weekly Journal Discussion</h3>
+				<br><br><br><br><br>
 				<!-- <p>
 						<small>The literature reviews for Gyro-Roller project.</small>
 					</p> -->
 			</section>
 
 			<section id="paper-title" data-background="#EA4335">
-				<h3>Virtual Reality for Sensorimotor Rehabilitation Post-Stroke: The Promise and Current State of the Field <small>(2013)</small></h3>
-				<p>Week 5</p>
+				<h3>The Design of an Interactive Stroke Rehabilitation Gaming System <small>(2011)</small></h3>
+				<p>Week 8</p>
 			</section>
 
 			<section id="introduction" data-background="#FBBC05">
@@ -83,195 +88,189 @@
 				</section>
 
 				<section>
-					<ul>
-						<li>It was suggested that VR could deliver training intensity (repetitions and duration) associated with <red>neuroplasticity</red> and <red>positive behavioral adaptations</red></li>
-						<li>Early reviews of the field have shown that promise to be <red>partially met</red></li>
-						<li>The study of virtual reality-enhanced rehabilitation has a <red>short life of approximately a decade</red></li>
-						<li>There are two alternating bi-annual international conferences</li>
+					<ul class="blk-75">
+						<li>In the past two years, stroke-related medical costs have <red>increased 20%</red> (in US) while <red>the numbers of clinical treatment sessions have declined.</red></li>
+						<li>There is a need to create a home-based stroke rehabilitation system that is affordable but remains effective and interesting.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Approaches to Stroke Rehabilitation</h3>
+					<ul class="blk-75">
+						<li>Traditional customary care involves <red>time intensive treatment from an occupational therapist.</red></li>
 						<ul class="ulul">
-							<li>International Conference on Virtual Reality Rehabilitation - <a href="http://virtual-rehab.org/2013/">http://virtual-rehab.org/2013/</a></li>
-							<li>International Conference on Disability Virtual Reality and Associated Technologies - <a href="www. icdvrat.reading.ac.uk/">www. icdvrat.reading.ac.uk/</a></li>
-							<li>Recently members of both groups have formed the International Society for Virtual Reality - <a href="www.isvr.org">www.isvr.org</a></li>
+							<li>performing repetitive movements <b>></b> induce motor learning <b>></b> improve the movement behaviour of the stroke survivor</li>							
+						</ul>
+						<li>Several alternative rehabilitation methods have been proposed:</li>
+						<ul class="ulul">
+							<li>Constrained Induced Movement Therapy (CIMT)</li>
+							<ul class="ulul">
+								<li style="font-size:70%"><red>CIMT is only useful for a sub-group of the stroke population because of the mental and psychological requirements in having self-discipline to stick with the program</red></li>
+							</ul>
+							<li>Robot Assisted Rehabilitation</li>
+							<ul class="ulul">
+								<li style="font-size:70%"><red>not cost effective for small business nor is it feasible for the home environment</red></li>
+							</ul>
+						</ul>
+						<li>Studies have shown that the Wii can have a beneficial health impact on stroke survivors.</li>
+						<ul class="ulul">
+							<li><red>require precise dexterous movements</red></li>
+							<li><red>completing game activities under extreme time pressure</red></li>
 						</ul>
 					</ul>
+				</section>
+				
+				<section>
+					<h3>Benefits of gaming</h3>
+					<ul>
+						<li>Playing video games produces gains in certain physical and cognitive abilities.</li>
+						<li>Previous studies using video games as the <red>primary intervention</red> have found improvements in:</li>
+							<ul class="ulul">
+								<li><red>reaction time, short-term and long-term memory, attention,</red> and <red>spatial ability</red></li>
+							</ul>
+						<li>Different approaches in game design for rehabilitation:</li>
+							<ul class="ulul">
+								<li>focused on memory and prose recall</li>
+								<li>encode specific rehabilitative movements as part of an interactive gaming experience</li>
+							</ul>		
+					</ul>
+				</section>
+				
+				<section>
+					<h3>Purpose</h3>
+					<blockquote>To create a compelling and fun game/experience that users would <red>enjoy playing</red> and that would <red>also improve the mobility and dexterity</red> of their stroke-affected arm</blockquote>
+					<p><b>Rehabilitation Medicine + Computer Science + Engineering</b></p>
 				</section>
 			</section>
 
 			<section id="methods" data-background="#34A853">
 				<section>
-					<h2>Methods</h2>
-				</section>
-
-				<section data-notes="<ul><li>most recent than those examined in stroke and vr Cochrane review</li><li>CEBM center for evidence-based medicine</li><ul>">
-					<ul>
-						<h5>Paper search</h5>
-						<li>Search terms "virtual reality" and "stroke" from March 2010 to 2013</li>
-						<br>
-						<h5>Inclusion criteria</h5>
-						<li>RCTs that compared standard of care to VR, or compared different delivery methods in VR</li>
-						<br>
-						<h5>Exclusion criteria</h5>
-						<li>CEBM level of evidence lower than 3</li>
-						<li>Had a mechanistic or validation focus or used off-the-shelf video games</li>
-					</ul>
+					<h2>System Hardware Architecture</h2>
 				</section>
 
 				<section>
-					<h3>Search results</h3>
-					<ul>
-						<li>The search yielded 50 articles</li>
-						<li>Ten of which met the inclusion criteria</li>
-						<li>Eight are upper extremity rehabilitation studies <br>and two are gait treatment studies</li>
+					<h3>Input Devices</h3>
+					<ul class="blk-75">
+						<li>Stroke survivors are often not able to grasp and manipulate objects with their affected hand.</li>
+						<li>Therefore careful consideration for the input device is needed</li>
+						<li><b><yellow>Wii Remote with IR beacons</yellow></b> are used for 2D tracking</li>
+						<ul class="ulul">
+							<li>The raw 2D forearm tracking data is filtered using a <b><yellow>spring-damper function</yellow></b></li>
+							<li>After filtering the data were used for <b><yellow>simple inverse-kinematic (IK)</yellow></b> model of a human arm</li>
+						</ul>
 					</ul>
+				</section>
+				
+				<section>
+					<h3>System Display</h3>
+					<ul>
+						<li>The development and testing of the system was done on a personal computer.</li>
+					</ul>
+					<blockquote>A future design goal for the game display would be to <yellow><b>incorporate a low cost portable console that could connect directly to a television.</b></yellow></blockquote>
 				</section>
 			</section>
 
 			<section id="results" data-background="#4285F4">
 				<section>
-					<h2>Results</h2>
+					<h2>System Software Architecture</h2>
 				</section>
 
 				<section>
-					<img data-src="img/wk5/1.png" width="85%">
+					<ul class="blk-75">
+						<li>The system was developed in the <yellow><b>Unity 3D game engine.</b></yellow></li>
+						<li>Unity provides a rapid game prototyping and development environment and based on the Mono .NET software framework</li>
+					</ul>
 				</section>
 
 				<section>
-					<img data-src="img/wk5/2.png" width="85%">
+					<h3>System Operation and Content</h3>
+					<ul class="blk-75">
+						<li>A number of video game styles and genres were considered as prototypes, but the popular casual game Peggle was chosen.</li>
+						<li>Peggle itself is loosely based on older, mechanical games such as pinball.</li>
+						<li>The player’s score accumulates as pegs are hit and destroyed.</li>
+					</ul>
+					<blockquote>This greatly <b><yellow>simplified and sped up the graphical and game play design phases</yellow></b> and allowed more time and resources to be spent on augmenting and adapting the game to support stroke rehabilitation in the form of encouraging specific arm motions and exercises.
+</blockquote>
+				</section>
+
+				<section>
+					<br>
+					<h3>System Operation and Content</h3>
+					<ul class="blk-75">
+						<li>System based on Peggle’s game but is augmented to facilitate stroke-affected arm motions and exercises.</li>
+					</ul>
+					<br><br>
+					<iframe width="1100" height="440" src="https://en.wikipedia.org/wiki/Peggle"></iframe>
+				</section>
+								
+				<section data-notes="<ul><li>A variety of game behaviors can be triggered and controlled via large and small arm motions</li><li>The game control motions were chosen to mimic currently used stroke rehabilitation arm exercises</li></ul>">
+					<br><br>
+					<h3>System Operation and Content</h3>
+					<iframe width="640" height="480" src="https://www.youtube.com/embed/ZMo2Vegh8hA?start=40" frameborder="0" allowfullscreen></iframe>
 				</section>
 				
 				<section>
-					<img data-src="img/wk5/3.png" width="85%">
-				</section>
-				
-				<section>
-					<img data-src="img/wk5/4.png" width="85%" style="margin:-20px">
-				</section>
-				
-				<section>
-					<img data-src="img/wk5/5.png" width="85%">
+					<br>
+					<h3>System Operation and Content</h3>
+					<img data-src="img/wk8/1.png" width="50%">
+					<p style="margin-top:0">The system prototype</p>
 				</section>
 			</section>
 
 			<section id="discussion" data-background="#EA4335">
 				<section>
-					<h2>Discussion</h2>
+					<h2>System Design and Usability</h2>
 				</section>
 
 				<section>
-					<h3>The participants</h3>
+					<blockquote>Knowledge gathering exercises were conducted with <yellow>two experts in the field of stroke rehabilitation</yellow> to ensure that the type of arm motions and exercises to be encoded into the game could lead to improvements in stroke survivors</blockquote>
 					<ul>
-						<li>Typically in the chronic phase (> 6 months) post-stroke</li>
-						<li>One study for acute (4-22 days post) and two for sub-acute (< 3 months)</li>
-						<li>Cognitive and perceptual characteristics of the participants <br>were mentioned in all studies</li>
-						<blockquote style="font-size:65%; text-align:center">Future characterization of the cognitive, sensory and perceptual abilities of the subjects participating in trials will increase both the external validity and targeted application of VR. It will also <span class="uw">reduce the artificial separation between cognitive and motor rehabilitation.</span></blockquote>
-						<li>Most participants had moderately severe motor control impairments <br>(UEFMA 30-42 out of 44)</li>
-						<li>One study sample into moderately and mildly impaired groups, with <yellow>more impaired subjects making larger magnitude gains</yellow> with both VR and control interventions </li>
+						<li>In designing the game, a number of design criteria were developed which would facilitate stroke rehabilitation movements and exercises yet still be fun and compelling.</li>
+						<li>The game rules and mechanics should be simple and easily understood with the right balance of skill, chance and strategy.</li>
 					</ul>
-					
 				</section>
 
 				<section>
-					<h3>The hardware</h3>
+					<h3>Design Criteria</h3>
 					<ul>
-						<li>Robotic or motion sensing systems</li>
-						<li>Five of UL studies used a motion-sensing interface</li>
-						<li>Neither interface appeared to yield superior motor outcomes</li>
-						<li>Four UL systems were enhanced with haptics, three were purely visually based, and one had a mixed reality where subjects interacted with real world objects</li>
-					</ul>
-					<blockquote>
-						The current literature <span class="uw">does not point to robust clinically meaningful activity level outcomes for haptics added to VR systems</span>.
-					</blockquote>
-				</section>
-				
-				<section>
-					<h3>The simulations</h3>
-					<ul>
-						<li>Were evenly grouped into two categories: replication of <yellow>real world tasks</yellow> such as reaching and walking, or <yellow>game-based tasks</yellow>, such as flying a plane</li>
-						<li>Reaching simulations consistently improved reaching abilities, while game-based UL interventions produced less specific outcomes</li>
-						<li>Task-specific training yielded superior results in the UL studies, but not in the gait studies</li>
-						<li>Most UL systems (6 of 8) were in 3D</li>
-					</ul>
-					<blockquote style="font-size:75%">However, while the fidelity of movement is enhanced with 3D immersive systems, they are <span class="uw">not superior to 2D non-immersive systems in promoting real world activity level motor outcomes</span>.</blockquote>
-				</section>
-				
-				<section>
-					<h3>The frequency, duration and distribution</h3>
-					<ul>
-						<li>Training was typically distributed over a week</li>
-						<li>The average duration was approximately 4 weeks (UL and gait), but was <yellow>12 weeks</yellow> for some UL studies</li>
-						<li>Total training time for the UL studies was an average of <yellow>10.5 h</yellow></li>
-						<li>UL studies supported a dose–response relationship between increased training dose and larger improvements in motor function</li>
-						<blockquote style="font-size:65%; text-align:center">
-							Some of the strongest evidence related to the effectiveness of non-technology-based rehabilitation interventions suggests that <span class="uw">outcomes are related to the dose of the intervention</span>
-						</blockquote>
-						<li>It is not clear if training doses in VR will compare to real world training doses</li>
+						<li>The game design required additional considerations due to the <yellow>uniqueness and limitations of the target users</yellow>  and to the functional requirements for successful physical rehabilitation.</li>
+						<li>In particular, to achieve true physical gains the players would need to spend significant time in the environment.</li>
+							<ul class="ulul">
+								<li>A game that is boring and tedious or an interface that is too physically strenuous would be unacceptable.</li>
+								<li>A game mechanic that is too easily mastered or that is too difficult can cause player frustration and nullify benefits of the system.</li>
+							</ul>
+						<li>Designing an environment that leads to a feeling of engagement, immersion and “oneness” with the system is <yellow>more of an art than a science.</yellow></li>
+							<ul class="ulul">
+								<li>However, extensive research exists in the area of computer interfaces including the new area of “serious” game design.</li>
+							</ul>
 					</ul>
 				</section>
 				
 				<section>
-					<h3>The progression</h3>
+					<h3>Usability Testing</h3>
 					<ul>
-						<li>Was achieved with software algorithms and clinician-tester input</li>
-						<li>Five of eight UL studies used algorithm for progression</li>
-						<li>For UL studies which lacked of an algorithm, the progression was not well described</li>
-						<li>The most sophisticated algorithm used <yellow>movement parameters</yellow> such as smoothness of sub-movements to shape the motor behavior and progress the therapy</li>
-					</ul>
-					<blockquote style="font-size:75%">
-						It appears that <span class="uw">robotic interfaces have the advantage of using sophisticated algorithms</span> for treatment customization and progression. Whether this benefit merits <span class="uw">the cost is still not clear</span>.
-					</blockquote>
-				</section>
-				
-				<section>
-					<h3>The outcomes</h3>
-					<ul>
-						<li>Several of the UL studies demonstrated <yellow>statistically significant improvements at the body function level and/or activity level</yellow> for both VR groups and dose-matched controls.</li>
-						<li>It is also interesting to note that the <yellow>largest magnitude improvements were reported in the acute stage of recovery</yellow></li>
-						<li>Beyond this clear observation, patterns for <yellow>dose–response or acuity levels impacting outcomes were not apparent</yellow></li>
+						<li>Due to limited budget and timeline a case study was conducted where a recent stroke survivor volunteered to evaluate the system.</li>
+							<ul class="ulul">
+								<li>The stroke survivor had persistent hemiparesis that lead to <yellow><b>impaired upper extremity function</b></yellow> but had <yellow><b>no severe weakness or sensory impairment of the upper extremity.</b></yellow></li>
+							</ul>
+						<li>Further, the individual stated that the prototype Peggle-based game was <b><yellow>fun and conducive to extended use</yellow></b>, a primary goal of this research.</li>
 					</ul>
 				</section>
 			</section>
 
 			<section id="conclusion" data-background="#FBBC05">
 				<section>
-					<h2>Conclusion</h2>
-				</section>
-
-				<section>
-					<h3>Remaining questions</h3>
-					<blockquote>
-						While the quantity of RCT’s examining VR for stroke rehabilitation is growing, <b><span class="ub">there remain unresolved questions about the technology, clinical characteristics, and practical concerns</span></b> that will affect translation of VR rehabilitation into practice.
-					</blockquote>
+					<h2>Conclusion and Future Work</h2>
 				</section>
 
 				<section>
 					<ul>
-						<h5>Technology related</h5>
-						<li>Is it necessary to utilize haptic interfaces?</li>
-						<li>Are semi-immersive 2D systems <red>as efficacious as immersive systems in reducing impairments</red> and promoting activity?</li>
-						<br>
-						<li>Do software-controlled algorithms <red>provide greater speed and fidelity</red> of exercise progression?</li>
-						<li>Are they superior to expert clinical decision-making?</li>
-						<li>Can they be combined with clinician-decision making?</li>
-					</ul>
-				</section>
-				
-				<section>
-					<ul>
-						<h5>Participant selection and specificity of training</h5>
-						<li>What are the <red>minimal cognitive and perceptual requirements</red> to use virtual environments for sensorimotor rehabilitation effectively?</li>
-						<li>How will <red>differences in motor severity, chronicity, and type of task</red> interact with VR system capabilities and dose requirements?</li>
-						<br>
-						<h5>Practical considerations</h5>
-						<li>Will the cost of the sophisticated technology (such a robots interfaced with the VE’s) <red>justify the benefits?</red></li>
-					</ul>
-				</section>
-				
-				<section>
-					<h3>Suggestions</h3>
-					<ul>
-						<b><p>Should be addressed in future study</p></b>
-						<li>The efficacy of VR interventions <red>relative to</red> the current standard of care</li>
-						<li>Comparing the <red>efficacy and effectiveness of various approaches</red> to presenting and delivering virtual interventions</li>
+						<li>This paper has described the <b>features, design, implementation and operation of the stroke rehabilitative gaming system and preliminary findings</b> from a case-study.</li>
+						<li>The system currently supports arm-tracking game control in 2D using only the Wii Remote’s IR camera tracking ability</li>
+							<ul class="ulul">
+								<li>Future development will include also utilizing the <b>Wii Remote’s three-axis accelerometers and the three-axis gyroscopes of the MotionPlus extension device.</b></li>
+								<li>Full, 6 DOF tracking of the player’s arm will <b>allow a much larger range of trackable arm motions</b> as well as <b>many more exercises and motions to be encouraged by stroke rehab game play.</b></li>
+							</ul>
 					</ul>
 				</section>
 			</section>
@@ -298,7 +297,7 @@
 			width: 1366,
 			height: 768,
 
-			transition: 'zoom', // none/fade/slide/convex/concave/zoom
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
 
 			// Optional reveal.js plugins
 			dependencies: [{
@@ -335,15 +334,7 @@
 		});
 
 		Reveal.configure({
-			backgroundTransition: 'fade',
-			// Shows the slide number using default formatting
-			// slideNumber: true,
-			// Slide number formatting can be configured using these variables:
-			//  h: current slide's horizontal index
-			//  v: current slide's vertical index
-			//  c: current slide index (flattened)
-			//  t: total number of slides (flattened)
-			slideNumber: 'h / v / c / t',
+			backgroundTransition: 'zoom',
 		});
 	</script>
 

@@ -1,27 +1,30 @@
 /* cover logo */
 .logoaim {
 	position: fixed;
-	top: -110%;
-	right: 15%;
-	/*bottom: -110%;*/
+	top: 0;
+	right: 10%;
 }
 .logomu {
 	position: fixed;
-	top: -110%;
-	right: 5%;
-	/*bottom: -110%;*/
+	top: 0;
+	right: 0;
+}
+@-webkit-keyframes aimbot {
+  from { -webkit-transform: rotate(-10deg); }
+  to { -webkit-transform: rotate(10deg); }
 }
 .aimbot {
+	-webkit-animation:aimbot 1.5s infinite alternate;
 	position: fixed;
-	bottom: -115%;
+	bottom: 0;
 	left: 5%;
 	transform: scaleX(-1);
 	transform: rotate(-15deg);
 }
 .headertext p {
 	position: fixed;
-	top: -95%;
-	right: 25%;
+	top: 5%;
+	right: 20%;
 	text-align: right;
 	font-size: x-large;
 	font-weight: 700;
@@ -47,6 +50,22 @@ black {
 }
 white {
 	color: white;
+}
+.blk-60 {
+	width: 60%;
+	display: inline-block;
+}
+.blk-65 {
+	width: 65%;
+	display: inline-block;
+}
+.blk-70 {
+	width: 70%;
+	display: inline-block;
+}
+.blk-75 {
+	width: 75%;
+	display: inline-block;
 }
 .blk2 {
 	width: 500px;
@@ -88,4 +107,3 @@ white {
 	background: none !important;
 	box-shadow: none !important;
 }
-
